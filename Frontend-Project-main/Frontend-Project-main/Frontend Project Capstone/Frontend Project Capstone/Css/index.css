@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.cover-container {
+  flex: 1;
+  background: url('https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg') center/cover no-repeat; /* Set your background image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.logo {
+  width: 150px; 
+  height: auto;
+  margin-bottom: 20px; 
+  
+}
+
+.slogan {
+  font-size: 100px; 
+  color: rgb(112, 3, 245);
+  
+}
+
+p{
+  color: black;
+  font-weight: bolder;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+/* Styles for the banner */
+.banner {
+  display: inline;
+  width: 100%;
+  height: 58vh;
+}
+
+/* Styles for the second logo name */
+.logoname-2 {
+  color: #a61ab3;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Styles for the slogan */
+.slogan {
+  color: #a61ab3;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Styles for the container of the banner */
+.banner-box {
+  position: relative;
+  text-align: center;
+}
+
+/* Styles for centering content within the banner */
+.centered {
+  position: absolute;
+  top: 55%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+/* Styles for the available brands cards */
+.brand {
+  height: 280px;
+  width: auto;
+  border: 2.5px solid #df20df;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Styles for images within the brand cards */
+.brand img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+/* Hover effect on images within the brand cards */
+.brand:hover img {
+  transform: scale(0);
+}
+
+/* Styles for the content overlay within the brand cards */
+.content {
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.content p{
+  font-size: 15px;
+}
+
+/* Hover effect on the content overlay within the brand cards */
+.brand:hover .content {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.3s;
+}
+
+/* Styles for the shop button on the banner  */
+.Shop-btn {
+  color: #fff;
+  background-color: #ff9900;
+  padding: 5px 25px 5px 25px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 25px;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+}
+
+/* Hover effect on the shop button on the banner  */
+.Shop-btn:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* Styles for the shop icon on the banner  */
+.fa-shop {
+  margin-right: 8px;
+  color: #40df20;
+}
+
+/* dummy cards styling */
+.dummy-card {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #ecf0f1;
+  transition: background-color 0.3s;
+}
+
+.dummy-card:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.dummy-card i {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.dummy-card h3 {
+  color: #2c3e50;
+}
+
+.dummy-card p {
+  color: #7f8c8d;
+}
+
+@media (max-width: 576px) {
+  .dummy-card {
+    margin: 10px;
+  }
+}
